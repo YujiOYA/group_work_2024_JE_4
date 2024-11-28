@@ -22,29 +22,28 @@ body {
     left: 50%;
     width: 50%;
     height: 2px;
-    background-color: yellow;
+    background-color: white;
     transform-origin: 0% 100%;
     transform: rotate(0deg);
-    transition: transform 1s linear;
 }
 
 .hour {
     height: 4px;
-    background-color: white;
-    animation: rotateHour 12s infinite linear;
+    background-color: yellow;
+    animation: rotateHour 60s infinite steps(60);
 }
 
 .minute {
-    animation: rotateMinute 60s infinite linear;
+    animation: rotateMinute 12s infinite linear;
 }
 
 @keyframes rotateHour {
     from {
-        transform: rotate(270deg);
+        transform: rotate(0deg);
     }
 
     to {
-        transform: rotate(630deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -56,4 +55,16 @@ body {
     to {
         transform: rotate(630deg);
     }
+
+    /* 0% {
+        transform: rotate(270deg);
+    }
+
+    70% {
+        transform: rotate(630deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    } */
 }
