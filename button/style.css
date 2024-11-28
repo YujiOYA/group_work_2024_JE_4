@@ -1,0 +1,53 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-area {
+    width: 75vw;
+    height: auto;
+    padding: 1em;
+    box-shadow: #ccc 0px 1px 1px 1px;
+}
+
+.input-area form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.input-area form .input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.submit-button {
+    width: 64px;
+    height: 56px;
+    color: #479FF8;
+    border: 2px solid #479FF8;
+    background-color: #ffffff;
+    border-radius: 28px;
+    box-sizing: border-box;
+    transition: 1.5s;
+}
+
+.submit-button.is-pressed {
+    color: #ffffff;
+    background-color: #479FF8;
+}
+
+.submit-button.is-appearing {
+    color: #fff;
+    background-color: #bcbec1;
+
+}
