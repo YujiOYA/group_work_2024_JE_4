@@ -1,8 +1,7 @@
 const submitButton = document.querySelector(".submit-button")
 submitButton.addEventListener("click",onClickSubmitButton)
-function onClickSubmitButton() {
-    console.log(intervalId);
-    
+function onClickSubmitButton(e) {
+    e.preventDefault()
     submitButton.classList.remove("is-appearing")
     submitButton.classList.add("is-pressed")
     clearInterval(intervalId)
