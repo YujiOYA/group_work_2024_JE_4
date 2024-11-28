@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
     background-color: rgb(255, 255, 255);
@@ -39,20 +40,20 @@ body {
 
 @keyframes rotateHour {
     from {
-        transform: rotate(0deg);
+        transform: rotate(270deg);
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(630deg);
     }
 }
 
 @keyframes rotateMinute {
     from {
-        transform: rotate(0deg);
+        transform: rotate(270deg);
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(630deg);
     }
 }
