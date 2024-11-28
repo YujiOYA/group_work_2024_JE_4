@@ -24,7 +24,6 @@ body {
     height: 2px;
     background-color: white;
     transform-origin: 0% 100%;
-    transform: rotate(0deg);
 }
 
 .hour {
